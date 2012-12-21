@@ -115,7 +115,7 @@ void ofxCustomSlider<Type>::loadFromXml(ofxXmlSettings& xml) {
 }
 
 template<typename Type>
-Type ofxCustomSlider<Type>::setByIndex(int i){
+void ofxCustomSlider<Type>::setByIndex(int i){
 	index = i;
 	value = getValue(i);
 	return value;
